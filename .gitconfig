@@ -1,0 +1,9 @@
+[user]
+  name = aguraan
+  email = agura.iv@gmail.com
+[url "https://"]
+	insteadOf = git://
+[core]
+	editor = vim
+[init]
+	defaultBranch = main
