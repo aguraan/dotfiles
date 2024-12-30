@@ -119,6 +119,7 @@ alias zshconfig="nvim ~/.zshrc"
 alias vimconfig="nvim ~/.config/nvim"
 alias tmuxconfig="nvim ~/.tmux.conf"
 alias kittyconfig="nvim ~/.config/kitty/kitty.conf"
+alias ghosttyconfig="nvim ~/.config/ghostty/config"
 alias fim='nvim $(fzf -m --preview="batcat --color=always --style=header,grid --line-range :500 {}")'
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
