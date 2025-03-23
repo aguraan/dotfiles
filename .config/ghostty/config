@@ -1,4 +1,24 @@
+# JetBrainsMono Nerd Font Mono
+#   JetBrainsMono NFM Bold
+#   JetBrainsMono NFM Bold Italic
+#   JetBrainsMono NFM ExtraBold
+#   JetBrainsMono NFM ExtraBold Italic
+#   JetBrainsMono NFM ExtraLight
+#   JetBrainsMono NFM ExtraLight Italic
+#   JetBrainsMono NFM Italic
+#   JetBrainsMono NFM Light
+#   JetBrainsMono NFM Light Italic
+#   JetBrainsMono NFM Medium
+#   JetBrainsMono NFM Medium Italic
+#   JetBrainsMono NFM Regular
+#   JetBrainsMono NFM SemiBold
+#   JetBrainsMono NFM SemiBold Italic
+#   JetBrainsMono NFM Thin
+#   JetBrainsMono NFM Thin Italic
 font-family = JetBrainsMono Nerd Font Mono
+font-family-bold = JetBrainsMono NFM Bold
+font-family-italic = JetBrainsMono NFM Italic
+font-family-bold-italic = JetBrainsMono NFM Bold Italic
 # font-synthetic-style = false
 font-size = 10.5
 
@@ -19,6 +39,7 @@ window-padding-y = 10
 window-padding-balance = true
 window-decoration = false
 window-height = 53
-window-width = 208
+window-width = 206
 
 shell-integration = zsh
+image-storage-limit = 320000000

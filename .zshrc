@@ -78,7 +78,7 @@ ZSH_TMUX_AUTOSTART=true
 ZSH_TMUX_AUTOSTART_ONCE=true
 ZSH_TMUX_AUTOCONNECT=true
 ZSH_TMUX_AUTOQUIT=false
-ZSH_TMUX_DEFAULT_SESSION_NAME="aguraan"
+ZSH_TMUX_DEFAULT_SESSION_NAME="thomas"
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
@@ -116,12 +116,19 @@ fi
 
 alias vim="nvim"
 alias zshconfig="nvim ~/.zshrc"
+alias sshconfig="nvim ~/.ssh/config"
 alias vimconfig="nvim ~/.config/nvim"
 alias tmuxconfig="nvim ~/.tmux.conf"
+alias yaziconfig="nvim ~/.config/yazi"
 alias kittyconfig="nvim ~/.config/kitty/kitty.conf"
 alias ghosttyconfig="nvim ~/.config/ghostty/config"
-alias fim='nvim $(fzf -m --preview="batcat --color=always --style=header,grid --line-range :500 {}")'
+
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+alias fim='nvim $(fzf -m --preview="batcat --color=always --style=header,grid --line-range :500 {}")'
+alias tcat='mlr --icsv --opprint cat'
+# Load ShellGPT
+alias loadsgpt="source ~/shellgpt/shellgpt/bin/activate"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -157,4 +164,12 @@ function y() {
 }
 
 # increase kybd repeat rate
-xset r rate 200 25
+xset r rate 150 25
+
+[ -f ~/.openairc ] && source ~/.openairc
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# Turbo
+export TURBO_TELEMETRY_DISABLED=1
+export DO_NOT_TRACK=1
